@@ -2,12 +2,44 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
-    <context:property-placeholder location="classpath:storage.properties"/>
+    <context:property-placeholder location="classpath:storage.properties,classpath:database.properties"/>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+
+    <jpa:repositories base-package="ua.epam.mishchenko.ticketbooking.repository"/>
+    <context:component-scan base-package="ua.epam.mishchenko.ticketbooking.repository"/>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="ua.epam.mishchenko.ticketbooking.entity"/>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
 
     <bean id="eventDAO" class="ua.epam.mishchenko.ticketbooking.dao.impl.EventDAOImpl">
         <property name="storage" ref="storage"/>
@@ -24,6 +56,9 @@
     <bean id="eventService" class="ua.epam.mishchenko.ticketbooking.service.impl.EventServiceImpl" autowire="byName">
     </bean>
 
+    <bean id="eventServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbEventService" autowire="byName">
+    </bean>
+
     <bean id="ticketService" class="ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl" autowire="byName">
     </bean>
 
@@ -31,7 +66,7 @@
     </bean>
 
     <bean id="bookingFacade" class="ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl">
-        <constructor-arg ref="eventService"/>
+        <constructor-arg ref="eventServiceDb"/>
         <constructor-arg ref="ticketService"/>
         <constructor-arg ref="userService"/>
     </bean>
