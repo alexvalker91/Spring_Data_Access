@@ -28,7 +28,7 @@ public class BookingFacadeImplTest {
     @Test
     public void createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk() {
         User user = new UserImpl("Andrii", "andrii@gmail.com");
-        Event event = new EventImpl("Integration Event", new Date(System.currentTimeMillis()));
+        Event event = new EventImpl("Integration Event", new Date(System.currentTimeMillis()), 100);
         int place = 10;
 
         user = bookingFacade.createUser(user);

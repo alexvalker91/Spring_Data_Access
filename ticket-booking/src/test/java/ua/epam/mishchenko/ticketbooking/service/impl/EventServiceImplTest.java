@@ -44,7 +44,7 @@ public class EventServiceImplTest {
     @Test
     public void getEventByIdWithExistsIdShouldBeOk() throws ParseException {
         long userId = 3L;
-        Event expectedEvent = new EventImpl(userId, "Third event", DATE_FORMATTER.parse("16-05-2022 12:00"));
+        Event expectedEvent = new EventImpl(userId, "Third event", DATE_FORMATTER.parse("16-05-2022 12:00"), 30);
 
         when(eventDAO.getById(userId)).thenReturn(expectedEvent);
 
@@ -66,8 +66,8 @@ public class EventServiceImplTest {
     public void getEventsByTitleWithExistsTitleShouldBeOk() throws ParseException {
         String title = "Third event";
         List<Event> expectedEvents = Arrays.asList(
-                new EventImpl(3L, title, DATE_FORMATTER.parse("16-05-2022 12:00")),
-                new EventImpl(5L, title, DATE_FORMATTER.parse("25-05-2022 9:10"))
+                new EventImpl(3L, title, DATE_FORMATTER.parse("16-05-2022 12:00"), 30),
+                new EventImpl(5L, title, DATE_FORMATTER.parse("25-05-2022 9:10"), 30)
         );
 
         when(eventDAO.getEventsByTitle(eq(title), anyInt(), anyInt())).thenReturn(expectedEvents);
@@ -90,8 +90,8 @@ public class EventServiceImplTest {
     public void getEventsForDayWithExistsDayShouldBeOk() throws ParseException {
         Date day = DATE_FORMATTER.parse("15-05-2022 21:00");
         List<Event> expectedEvents = Arrays.asList(
-                new EventImpl(2L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00")),
-                new EventImpl(4L, "Fourth event", DATE_FORMATTER.parse("15-05-2022 21:00"))
+                new EventImpl(2L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00"), 20),
+                new EventImpl(4L, "Fourth event", DATE_FORMATTER.parse("15-05-2022 21:00"), 40)
         );
 
         when(eventDAO.getEventsForDay(eq(day), anyInt(), anyInt())).thenReturn(expectedEvents);
@@ -123,7 +123,7 @@ public class EventServiceImplTest {
 
     @Test
     public void createEventWithExistsTitleAndEmailShouldReturnNull() throws ParseException {
-        EventImpl expectedEvent = new EventImpl(1L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00"));
+        EventImpl expectedEvent = new EventImpl(1L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00"), 10);
 
         when(eventDAO.insert(expectedEvent)).thenReturn(expectedEvent);
 
@@ -134,7 +134,7 @@ public class EventServiceImplTest {
 
     @Test
     public void updateEventWithExistsEventShouldBeOk() throws ParseException {
-        Event expectedEvent = new EventImpl(1L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00"));
+        Event expectedEvent = new EventImpl(1L, "Second event", DATE_FORMATTER.parse("15-05-2022 21:00"), 10);
 
         when(eventDAO.update(any())).thenReturn(expectedEvent);
 

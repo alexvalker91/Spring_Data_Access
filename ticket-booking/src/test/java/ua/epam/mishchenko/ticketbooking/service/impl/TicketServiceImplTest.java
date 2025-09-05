@@ -88,7 +88,7 @@ public class TicketServiceImplTest {
 
     @Test
     public void getBookedTicketsWithNotNullEventAndProperPageSizeAndPageNumShouldBeOk() throws ParseException {
-        Event event = new EventImpl(4, "Fourth event", DATE_FORMATTER.parse("15-05-2022 21:00"));
+        Event event = new EventImpl(4, "Fourth event", DATE_FORMATTER.parse("15-05-2022 21:00"), 40);
         List<Ticket> expectedListOfTicketsByEvent = Arrays.asList(
                 new TicketImpl(4L, 1L, 4L, 20, Ticket.Category.BAR),
                 new TicketImpl(2L, 3L, 4L, 10, Ticket.Category.PREMIUM)
