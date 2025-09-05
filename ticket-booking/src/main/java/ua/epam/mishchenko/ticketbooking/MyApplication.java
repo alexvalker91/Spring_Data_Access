@@ -15,17 +15,12 @@ public class MyApplication {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         BookingFacade bookingFacade = context.getBean("bookingFacade", BookingFacade.class);
-//        System.out.println("Hello World");
-//
-//        Event event = bookingFacade.getEventById(1);
-//        System.out.println("Title Kurami: " + event.getTitle());
-//        event.setTitle("New Title Test");
-//        bookingFacade.updateEvent(event);
-//        event = bookingFacade.getEventById(1);
-//        System.out.println("Title Kurami: " + event.getTitle());
-//        bookingFacade.updateEvent(event);
-//        event = bookingFacade.getEventById(1);
-//        System.out.println("Title Kurami: " + event.getTitle());
+        System.out.println("Hello World");
+
+        Event event = bookingFacade.getEventById(1);
+        System.out.println("Title Kurami: " + event.getTitle());
+        event.setTitle("New Title Test");
+        bookingFacade.updateEvent(event);
 
         String dateString = "2023-10-05 17:00:00";
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
