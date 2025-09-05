@@ -31,6 +31,14 @@ public class UserAccountDb {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
 }
 
 //CREATE TABLE user_account_db (

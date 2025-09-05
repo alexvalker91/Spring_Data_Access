@@ -95,7 +95,19 @@ public class BookingFacadeImpl implements BookingFacade {
 
     @Override
     public Ticket bookTicket(long userId, long eventId, int place, Ticket.Category category) {
-        return ticketService.bookTicket(userId, eventId, place, category);
+        Event event = eventService.getEventById(eventId);
+        int ticketPrice = event.getTicketPrice();
+
+        UserAccount userAccount = userAccountService.getUserAccountByUserId(userId);
+        int userAmount = userAccount.getUserAmount();
+
+        if (ticketPrice > userAmount) {
+            return null;
+        } else {
+            userAccount.setUserAmount(userAccount.getUserAmount() - ticketPrice);
+            userAccountService.updateUserAccount(userAccount);
+            return ticketService.bookTicket(userId, eventId, place, category);
+        }
     }
 
     @Override

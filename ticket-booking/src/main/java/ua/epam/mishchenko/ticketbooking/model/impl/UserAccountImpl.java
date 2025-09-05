@@ -8,6 +8,14 @@ public class UserAccountImpl implements UserAccount {
     private Long userId;
     private int userAmount;
 
+    public UserAccountImpl() {}
+
+    public UserAccountImpl(Long id, Long userId, int userAmount) {
+        this.id = id;
+        this.userId = userId;
+        this.userAmount = userAmount;
+    }
+
     @Override
     public long getId() {
         return id;
