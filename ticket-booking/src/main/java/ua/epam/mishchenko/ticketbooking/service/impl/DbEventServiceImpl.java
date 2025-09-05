@@ -19,9 +19,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class DbEventService implements EventService {
+public class DbEventServiceImpl implements EventService {
 
-    private static final Logger LOGGER = LogManager.getLogger(DbEventService.class);
+    private static final Logger LOGGER = LogManager.getLogger(DbEventServiceImpl.class);
 
     @Autowired
     private DbEventRepository dbEventRepository;

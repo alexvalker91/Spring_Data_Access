@@ -56,7 +56,7 @@
     <bean id="eventService" class="ua.epam.mishchenko.ticketbooking.service.impl.EventServiceImpl" autowire="byName">
     </bean>
 
-    <bean id="eventServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbEventService" autowire="byName">
+    <bean id="eventServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbEventServiceImpl" autowire="byName">
     </bean>
 
     <bean id="ticketService" class="ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl" autowire="byName">
