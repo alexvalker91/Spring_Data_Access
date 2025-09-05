@@ -26,6 +26,9 @@ public class EventDb {
     @Column(name = "event_date")
     private Date date;
 
+    @Column(name = "event_ticket_price")
+    private int ticketPrice;
+
     public long getId() {
         return id;
     }
@@ -52,7 +55,8 @@ public class EventDb {
 //CREATE TABLE event_db (
 //        id SERIAL PRIMARY KEY,
 //        event_title VARCHAR(255) NOT NULL,
-//event_date TIMESTAMP NOT NULL
+//event_date TIMESTAMP NOT NULL,
+//event_ticket_price INTEGER
 //);
 
 //INSERT INTO event_db (event_title, event_date)
