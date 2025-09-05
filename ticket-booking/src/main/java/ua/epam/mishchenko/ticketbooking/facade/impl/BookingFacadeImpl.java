@@ -1,5 +1,6 @@
 package ua.epam.mishchenko.ticketbooking.facade.impl;
 
+import org.springframework.transaction.annotation.Transactional;
 import ua.epam.mishchenko.ticketbooking.facade.BookingFacade;
 import ua.epam.mishchenko.ticketbooking.model.Event;
 import ua.epam.mishchenko.ticketbooking.model.Ticket;
@@ -94,6 +95,7 @@ public class BookingFacadeImpl implements BookingFacade {
     }
 
     @Override
+    @Transactional
     public Ticket bookTicket(long userId, long eventId, int place, Ticket.Category category) {
         Event event = eventService.getEventById(eventId);
         int ticketPrice = event.getTicketPrice();
@@ -121,6 +123,7 @@ public class BookingFacadeImpl implements BookingFacade {
     }
 
     @Override
+    @Transactional
     public boolean cancelTicket(long ticketId) {
         Ticket ticket = ticketService.getById(ticketId);
         long eventId = ticket.getEventId();
