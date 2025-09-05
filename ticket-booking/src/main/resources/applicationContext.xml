@@ -53,19 +53,10 @@
         <property name="storage" ref="storage"/>
     </bean>
 
-    <bean id="eventService" class="ua.epam.mishchenko.ticketbooking.service.impl.EventServiceImpl" autowire="byName">
-    </bean>
-
     <bean id="eventServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbEventServiceImpl" autowire="byName">
     </bean>
 
-    <bean id="ticketService" class="ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl" autowire="byName">
-    </bean>
-
     <bean id="ticketServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbTicketServiceImpl" autowire="byName">
-    </bean>
-
-    <bean id="userService" class="ua.epam.mishchenko.ticketbooking.service.impl.UserServiceImpl" autowire="byName">
     </bean>
 
     <bean id="userServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbUserServiceImpl" autowire="byName">
