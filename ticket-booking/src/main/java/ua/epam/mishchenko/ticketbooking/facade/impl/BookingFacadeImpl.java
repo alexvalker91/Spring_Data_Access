@@ -122,6 +122,12 @@ public class BookingFacadeImpl implements BookingFacade {
 
     @Override
     public boolean cancelTicket(long ticketId) {
+        Ticket ticket = ticketService.getById(ticketId);
+        long eventId = ticket.getEventId();
+        Event event = eventService.getEventById(eventId);
+        int ticketPrice = event.getTicketPrice();
+        long userId = ticket.getUserId();
+        userAccountService.refillUserAccount(userId, ticketPrice);
         return ticketService.cancelTicket(ticketId);
     }
 

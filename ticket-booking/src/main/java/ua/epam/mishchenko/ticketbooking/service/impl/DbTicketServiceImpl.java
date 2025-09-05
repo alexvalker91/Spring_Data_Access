@@ -1,11 +1,13 @@
 package ua.epam.mishchenko.ticketbooking.service.impl;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import ua.epam.mishchenko.ticketbooking.entity.EventDb;
 import ua.epam.mishchenko.ticketbooking.entity.TicketDb;
 import ua.epam.mishchenko.ticketbooking.model.Event;
 import ua.epam.mishchenko.ticketbooking.model.Ticket;
@@ -15,6 +17,7 @@ import ua.epam.mishchenko.ticketbooking.repository.DbTicketRepository;
 import ua.epam.mishchenko.ticketbooking.service.TicketService;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class DbTicketServiceImpl implements TicketService {
@@ -72,6 +75,19 @@ public class DbTicketServiceImpl implements TicketService {
         } else {
             LOGGER.warn("Ticket {} not found for cancellation", ticketId);
             return false;
+        }
+    }
+
+    @Override
+    public Ticket getById(long id) {
+        Optional<TicketDb> ticketDbOptional = this.dbTicketRepository.findById(id);
+        if (ticketDbOptional.isPresent()) {
+            Ticket ticket = mapTicketDbToTicket(ticketDbOptional.get());
+            LOGGER.log(Level.DEBUG, "Successfully find of the ticket with id: {}", id);
+            return ticket;
+        } else {
+            LOGGER.log(Level.WARN, "Can not to find an ticket with id: {}", id);
+            return null;
         }
     }
 

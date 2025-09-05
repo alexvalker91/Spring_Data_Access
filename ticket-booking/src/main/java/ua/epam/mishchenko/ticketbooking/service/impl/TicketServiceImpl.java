@@ -99,6 +99,11 @@ public class TicketServiceImpl implements TicketService {
         }
     }
 
+    @Override
+    public Ticket getById(long id) {
+        return ticketDAO.getById(id);
+    }
+
     public void setTicketDAO(TicketDAOImpl ticketDAO) {
         this.ticketDAO = ticketDAO;
     }
