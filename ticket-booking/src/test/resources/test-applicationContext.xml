@@ -16,6 +16,7 @@
         <constructor-arg ref="eventService"/>
         <constructor-arg ref="ticketService"/>
         <constructor-arg ref="userService"/>
+        <constructor-arg ref="userAccountService"/>
     </bean>
 
     <bean id="eventService" class="ua.epam.mishchenko.ticketbooking.service.impl.EventServiceImpl" autowire="byName">
@@ -44,6 +45,10 @@
 
     <bean id="fileReader" class="ua.epam.mishchenko.ticketbooking.postprocessor.FileReader">
         <property name="file" value="${storage.path}"/>
+    </bean>
+
+    <bean id="userAccountService" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="ua.epam.mishchenko.ticketbooking.service.UserAccountService"/>
     </bean>
 
 </beans>

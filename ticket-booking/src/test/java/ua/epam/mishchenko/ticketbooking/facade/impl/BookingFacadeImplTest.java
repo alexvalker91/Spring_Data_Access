@@ -1,5 +1,6 @@
 package ua.epam.mishchenko.ticketbooking.facade.impl;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,8 +9,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import ua.epam.mishchenko.ticketbooking.model.Event;
 import ua.epam.mishchenko.ticketbooking.model.Ticket;
 import ua.epam.mishchenko.ticketbooking.model.User;
+import ua.epam.mishchenko.ticketbooking.model.UserAccount;
 import ua.epam.mishchenko.ticketbooking.model.impl.EventImpl;
+import ua.epam.mishchenko.ticketbooking.model.impl.UserAccountImpl;
 import ua.epam.mishchenko.ticketbooking.model.impl.UserImpl;
+import ua.epam.mishchenko.ticketbooking.service.UserAccountService;
 
 import java.util.Date;
 import java.util.List;
@@ -17,6 +21,9 @@ import java.util.List;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration({"classpath:/test-applicationContext.xml"})
@@ -24,6 +31,21 @@ public class BookingFacadeImplTest {
 
     @Autowired
     private BookingFacadeImpl bookingFacade;
+
+    @Autowired
+    private UserAccountService userAccountService;
+
+    @Before
+    public void setUp() {
+        UserAccount mockAccount = new UserAccountImpl();
+        mockAccount.setUserAmount(1000);
+
+        when(userAccountService.getUserAccountByUserId(anyLong()))
+                .thenReturn(mockAccount);
+
+        when(userAccountService.updateUserAccount(any(UserAccount.class)))
+                .thenAnswer(invocation -> invocation.getArgument(0));
+    }
 
     @Test
     public void createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk() {
