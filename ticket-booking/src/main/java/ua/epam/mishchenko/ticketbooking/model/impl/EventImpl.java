@@ -15,17 +15,21 @@ public class EventImpl implements Event {
 
     private Date date;
 
+    private int ticketPrice;
+
     public EventImpl() {}
 
-    public EventImpl(String title, Date date) {
+    public EventImpl(String title, Date date, int ticketPrice) {
         this.title = title;
         this.date = date;
+        this.ticketPrice = ticketPrice;
     }
 
-    public EventImpl(long id, String title, Date date) {
+    public EventImpl(long id, String title, Date date, int ticketPrice) {
         this.id = id;
         this.title = title;
         this.date = date;
+        this.ticketPrice = ticketPrice;
     }
 
     @Override
@@ -56,6 +60,16 @@ public class EventImpl implements Event {
     @Override
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    @Override
+    public int getTicketPrice() {
+        return ticketPrice;
+    }
+
+    @Override
+    public void setTicketPrice(int ticketPrice) {
+        this.ticketPrice = ticketPrice;
     }
 
     @Override

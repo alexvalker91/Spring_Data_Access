@@ -109,10 +109,10 @@ public class DbEventServiceImpl implements EventService {
     }
 
     private Event mapEventDbToEvent(EventDb eventDb) {
-        return new EventImpl(eventDb.getId(), eventDb.getTitle(), eventDb.getDate());
+        return new EventImpl(eventDb.getId(), eventDb.getTitle(), eventDb.getDate(), eventDb.getTicketPrice());
     }
 
     private EventDb mapEventToEventDb(Event event) {
-        return new EventDb(event.getId(), event.getTitle(), event.getDate());
+        return new EventDb(event.getId(), event.getTitle(), event.getDate(), event.getTicketPrice());
     }
 }

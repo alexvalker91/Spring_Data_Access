@@ -10,10 +10,11 @@ public class EventDb {
 
     public EventDb() {}
 
-    public EventDb(long id, String title, Date date) {
+    public EventDb(long id, String title, Date date, int ticketPrice) {
         this.id = id;
         this.title = title;
         this.date = date;
+        this.ticketPrice = ticketPrice;
     }
 
     @Id
@@ -39,6 +40,10 @@ public class EventDb {
         return date;
     }
 
+    public int getTicketPrice() {
+        return ticketPrice;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -50,6 +55,10 @@ public class EventDb {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public void setTicketPrice(int ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
 }
 
 //CREATE TABLE event_db (
@@ -59,5 +68,5 @@ public class EventDb {
 //event_ticket_price INTEGER
 //);
 
-//INSERT INTO event_db (event_title, event_date)
-//VALUES ('My First Event', '2023-10-05 18:00:00');
+//INSERT INTO event_db (event_title, event_date, event_ticket_price)
+//VALUES ('My First Event', '2023-10-05 18:00:00', 100);
