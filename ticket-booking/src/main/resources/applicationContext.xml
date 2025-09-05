@@ -71,10 +71,14 @@
     <bean id="userServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbUserServiceImpl" autowire="byName">
     </bean>
 
+    <bean id="userAccountServiceDb" class="ua.epam.mishchenko.ticketbooking.service.impl.DbUserAccountServiceImpl" autowire="byName">
+    </bean>
+
     <bean id="bookingFacade" class="ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl">
         <constructor-arg ref="eventServiceDb"/>
         <constructor-arg ref="ticketServiceDb"/>
         <constructor-arg ref="userServiceDb"/>
+        <constructor-arg ref="userAccountServiceDb"/>
     </bean>
 
     <bean id="storage" class="ua.epam.mishchenko.ticketbooking.db.Storage">

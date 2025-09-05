@@ -80,7 +80,7 @@ public class DbUserServiceImpl implements UserService {
     @Override
     public User updateUser(User user) {
         if (user == null) {
-            LOGGER.log(Level.WARN, "Can not to create an user: {}", user);
+            LOGGER.log(Level.WARN, "Can not to update an user: {}", user);
             return null;
         }
         UserDb userDb = mapUserToUserDb(user);

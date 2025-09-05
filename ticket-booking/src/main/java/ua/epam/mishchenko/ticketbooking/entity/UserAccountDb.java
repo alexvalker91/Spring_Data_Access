@@ -6,6 +6,14 @@ import jakarta.persistence.*;
 @Table(schema = "public", name = "user_account_db")
 public class UserAccountDb {
 
+    public UserAccountDb() {}
+
+    public UserAccountDb(Long id, long userId, int amount) {
+        this.id = id;
+        this.userId = userId;
+        this.amount = amount;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,6 +23,14 @@ public class UserAccountDb {
 
     @Column(name = "user_amount")
     private int amount;
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
 }
 
 //CREATE TABLE user_account_db (

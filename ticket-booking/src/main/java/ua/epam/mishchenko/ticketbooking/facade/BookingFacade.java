@@ -3,6 +3,7 @@ package ua.epam.mishchenko.ticketbooking.facade;
 import ua.epam.mishchenko.ticketbooking.model.Event;
 import ua.epam.mishchenko.ticketbooking.model.Ticket;
 import ua.epam.mishchenko.ticketbooking.model.User;
+import ua.epam.mishchenko.ticketbooking.model.UserAccount;
 
 import java.util.Date;
 import java.util.List;
@@ -139,4 +140,5 @@ public interface BookingFacade {
      */
     boolean cancelTicket(long ticketId);
 
+    int refillUserAccount(long userId, int amount);
 }

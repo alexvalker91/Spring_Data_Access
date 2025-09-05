@@ -4,8 +4,10 @@ import ua.epam.mishchenko.ticketbooking.facade.BookingFacade;
 import ua.epam.mishchenko.ticketbooking.model.Event;
 import ua.epam.mishchenko.ticketbooking.model.Ticket;
 import ua.epam.mishchenko.ticketbooking.model.User;
+import ua.epam.mishchenko.ticketbooking.model.UserAccount;
 import ua.epam.mishchenko.ticketbooking.service.EventService;
 import ua.epam.mishchenko.ticketbooking.service.TicketService;
+import ua.epam.mishchenko.ticketbooking.service.UserAccountService;
 import ua.epam.mishchenko.ticketbooking.service.UserService;
 
 import java.util.Date;
@@ -19,10 +21,16 @@ public class BookingFacadeImpl implements BookingFacade {
 
     private final UserService userService;
 
-    public BookingFacadeImpl(EventService eventService, TicketService ticketService, UserService userService) {
+    private final UserAccountService userAccountService;
+
+    public BookingFacadeImpl(EventService eventService,
+                             TicketService ticketService,
+                             UserService userService,
+                             UserAccountService userAccountService) {
         this.eventService = eventService;
         this.ticketService = ticketService;
         this.userService = userService;
+        this.userAccountService = userAccountService;
     }
 
     @Override
@@ -103,5 +111,10 @@ public class BookingFacadeImpl implements BookingFacade {
     @Override
     public boolean cancelTicket(long ticketId) {
         return ticketService.cancelTicket(ticketId);
+    }
+
+    @Override
+    public int refillUserAccount(long userId, int amount) {
+        return userAccountService.refillUserAccount(userId, amount);
     }
 }
