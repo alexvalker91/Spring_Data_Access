@@ -1265,3 +1265,1394 @@ Caused by: java.nio.file.NoSuchFileException: /data/prepared-data.txt
 [DEBUG] 2022-05-23 14:24:38.485 [main] EventDAOImpl - Start inserting of the event: null
 [DEBUG] 2022-05-23 14:24:38.500 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0300 in the database using pagination
 [DEBUG] 2022-05-23 14:24:38.520 [main] EventDAOImpl - Finding all events by title 'not exists title' in the database using pagination
+[DEBUG] 2025-09-08 15:01:27.794 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.794 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.794 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.795 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.795 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.795 [main] BookingFacadeImpl - Created user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.795 [main] BookingFacadeImpl - Getting user by id: 1
+[DEBUG] 2025-09-08 15:01:27.795 [main] UserServiceImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:01:27.796 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:01:27.796 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.796 [main] UserServiceImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.797 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.797 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.797 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.797 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.798 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.798 [main] BookingFacadeImpl - Created event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.798 [main] BookingFacadeImpl - Getting event by id: 1
+[DEBUG] 2025-09-08 15:01:27.798 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.798 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.799 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.799 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.799 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 1, place: 10, category: STANDARD
+[DEBUG] 2025-09-08 15:01:27.799 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.800 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.800 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.800 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.801 [main] TicketServiceImpl - Start booking a ticket for user with id 1, event with id event 1, place 10, category STANDARD
+[DEBUG] 2025-09-08 15:01:27.802 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.803 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.803 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.803 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.803 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:01:27.803 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.804 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[DEBUG] 2025-09-08 15:01:27.804 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} in the database using pagination
+[DEBUG] 2025-09-08 15:01:27.804 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.804 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:01:27.805 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.805 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}' in the database using pagination
+[DEBUG] 2025-09-08 15:01:27.805 [main] TicketDAOImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'} in the database using pagination
+[DEBUG] 2025-09-08 15:01:27.805 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.806 [main] BookingFacadeImpl - Canceling ticket with id: 1
+[DEBUG] 2025-09-08 15:01:27.806 [main] TicketDAOImpl - Finding a ticket by id: 1
+[DEBUG] 2025-09-08 15:01:27.806 [main] TicketDAOImpl - The ticket with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.806 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.806 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:27.806 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.807 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:27.807 [main] TicketServiceImpl - Start canceling a ticket with id: 1
+[DEBUG] 2025-09-08 15:01:27.807 [main] TicketDAOImpl - Start deleting of the ticket with id: 1
+[DEBUG] 2025-09-08 15:01:27.807 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 1
+[DEBUG] 2025-09-08 15:01:27.807 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 1
+[DEBUG] 2025-09-08 15:01:27.807 [main] BookingFacadeImpl - Canceled ticket with id 1: true
+[DEBUG] 2025-09-08 15:01:27.808 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:01:27.808 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.808 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:01:27.808 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:01:27.811 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:01:27.812 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.812 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}' in the database using pagination
+[WARN ] 2025-09-08 15:01:27.812 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:01'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:75) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:01:27.818 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.818 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.818 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] UserServiceImpl - Successfully creation of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] BookingFacadeImpl - Created user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventServiceImpl - Successfully creation of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] BookingFacadeImpl - Created event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:27.819 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 2, place: 7, category: STANDARD
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventServiceImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:01:27.819 [main] EventDAOImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:01:27.820 [main] EventDAOImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:01:27.820 [main] EventServiceImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:01:27.820 [main] TicketServiceImpl - Start booking a ticket for user with id 2, event with id event 2, place 7, category STANDARD
+[DEBUG] 2025-09-08 15:01:27.820 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.820 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.820 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.820 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:27.880 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 10, place: 5, category: PREMIUM
+[DEBUG] 2025-09-08 15:01:27.881 [main] BookingFacadeImpl - Booked ticket: {'id' : null, 'userId' : 1, 'eventId' : 10, 'place' : 5, 'category' : 'PREMIUM'}
+[DEBUG] 2025-09-08 15:01:27.883 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 20, place: 15, category: STANDARD
+[WARN ] 2025-09-08 15:01:27.883 [main] BookingFacadeImpl - Insufficient funds. userId: 2, eventId: 20, price: 200, balance: 50
+[DEBUG] 2025-09-08 15:01:27.910 [main] UserServiceImpl - Finding a user by id: 10
+[WARN ] 2025-09-08 15:01:27.910 [main] UserServiceImpl - Can not to get an user by id: 10
+[DEBUG] 2025-09-08 15:01:27.911 [main] UserServiceImpl - Finding a user by email: max@gmail.com
+[DEBUG] 2025-09-08 15:01:27.911 [main] UserServiceImpl - The user with email max@gmail.com successfully found 
+[DEBUG] 2025-09-08 15:01:27.912 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+[WARN ] 2025-09-08 15:01:27.912 [main] UserServiceImpl - Can not to create an user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.913 [main] UserServiceImpl - Start creating an user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.914 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.914 [main] UserServiceImpl - Start updating an user: null
+[WARN ] 2025-09-08 15:01:27.915 [main] UserServiceImpl - Can not to update an user: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.915 [main] UserServiceImpl - Finding a user by email: notexists@gmail.com
+[WARN ] 2025-09-08 15:01:27.916 [main] UserServiceImpl - Can not to get an user by email: notexists@gmail.com
+[DEBUG] 2025-09-08 15:01:27.917 [main] UserServiceImpl - Finding all users by name Not exists with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:01:27.917 [main] UserServiceImpl - Can not to find a list of users by name 'Not exists'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.918 [main] UserServiceImpl - Start deleting an user with id: 2
+[DEBUG] 2025-09-08 15:01:27.918 [main] UserServiceImpl - Successfully deletion of the user with id: 2
+[DEBUG] 2025-09-08 15:01:27.919 [main] UserServiceImpl - Finding all users by name Max with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.919 [main] UserServiceImpl - All users successfully found by name Max with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.920 [main] UserServiceImpl - Finding a user by id: 3
+[DEBUG] 2025-09-08 15:01:27.920 [main] UserServiceImpl - The user with id 3 successfully found 
+[DEBUG] 2025-09-08 15:01:27.921 [main] UserServiceImpl - Start updating an user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.921 [main] UserServiceImpl - Successfully updating of the user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:27.922 [main] UserServiceImpl - Start deleting an user with id: 10
+[WARN ] 2025-09-08 15:01:27.922 [main] UserServiceImpl - Can not to delete an user with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.941 [main] EventServiceImpl - Start updating an event: null
+[WARN ] 2025-09-08 15:01:27.942 [main] EventServiceImpl - Can not to update an event: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.942 [main] EventServiceImpl - Finding an event by id: 10
+[WARN ] 2025-09-08 15:01:27.943 [main] EventServiceImpl - Can not to find an event by id: 10
+[DEBUG] 2025-09-08 15:01:27.943 [main] EventServiceImpl - Finding an event by id: 3
+[DEBUG] 2025-09-08 15:01:27.943 [main] EventServiceImpl - Event with id 3 successfully found 
+[DEBUG] 2025-09-08 15:01:27.944 [main] EventServiceImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.945 [main] EventServiceImpl - All events successfully found for day 2022-05-15T21:00:00.000+0000 with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.945 [main] EventServiceImpl - Start creating an event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00'}
+[DEBUG] 2025-09-08 15:01:27.945 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00'}
+[DEBUG] 2025-09-08 15:01:27.947 [main] EventServiceImpl - Start updating an event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00'}
+[DEBUG] 2025-09-08 15:01:27.948 [main] EventServiceImpl - Successfully updating of the event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00'}
+[DEBUG] 2025-09-08 15:01:27.949 [main] EventServiceImpl - Finding all events by title not exists title with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:01:27.950 [main] EventServiceImpl - Can not to find a list of events by title 'not exists title'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.952 [main] EventServiceImpl - Start deleting an event with id: 6
+[DEBUG] 2025-09-08 15:01:27.952 [main] EventServiceImpl - Successfully deletion of the event with id: 6
+[DEBUG] 2025-09-08 15:01:27.953 [main] EventServiceImpl - Finding all events for day 2000-05-15T21:00:00.000+0000 with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:01:27.953 [main] EventServiceImpl - Can not to find a list of events for day 2000-05-15T21:00:00.000+0000
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.953 [main] EventServiceImpl - Start creating an event: null
+[WARN ] 2025-09-08 15:01:27.954 [main] EventServiceImpl - Can not to create an event: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.954 [main] EventServiceImpl - Start deleting an event with id: 10
+[WARN ] 2025-09-08 15:01:27.954 [main] EventServiceImpl - Can not to delete an event with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.955 [main] EventServiceImpl - Finding all events by title Third event with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.955 [main] EventServiceImpl - All events successfully found by title Third event with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.974 [main] TicketServiceImpl - Start canceling a ticket with id: 6
+[DEBUG] 2025-09-08 15:01:27.974 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 6
+[DEBUG] 2025-09-08 15:01:27.975 [main] TicketServiceImpl - Start booking a ticket for user with id 4, event with id event 1, place 10, category BAR
+[WARN ] 2025-09-08 15:01:27.975 [main] TicketServiceImpl - Can not to book a ticket for user with id 4, event with id 1, place 10, category BAR
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.976 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Alan', 'email' : 'alan@gmail.com'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.977 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Alan', 'email' : 'alan@gmail.com'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.977 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 4, 'title' : 'Fourth event', 'date' : '15-05-2022 21:00'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.978 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 4, 'title' : 'Fourth event', 'date' : '15-05-2022 21:00'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:01:27.978 [main] TicketServiceImpl - Finding all booked tickets by event null with page size 2 and number of page 1
+[WARN ] 2025-09-08 15:01:27.979 [main] TicketServiceImpl - Can not to find a list of booked tickets by event 'null'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.980 [main] TicketServiceImpl - Start booking a ticket for user with id 10, event with id event 10, place 20, category PREMIUM
+[DEBUG] 2025-09-08 15:01:27.980 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 10, 'eventId' : 10, 'place' : 20, 'category' : 'PREMIUM'}
+[DEBUG] 2025-09-08 15:01:27.981 [main] TicketServiceImpl - Start canceling a ticket with id: 10
+[WARN ] 2025-09-08 15:01:27.981 [main] TicketServiceImpl - Can not to cancel a ticket with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.982 [main] TicketServiceImpl - Finding all booked tickets by user null with page size 2 and number of page 1
+[WARN ] 2025-09-08 15:01:27.983 [main] TicketServiceImpl - Can not to find a list of booked tickets by user 'null'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:01:27.999 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Second event', 'date' : '15-05-2022 21:00'}
+[DEBUG] 2025-09-08 15:01:28.005 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:01:28.005 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:28.005 [main] EventDAOImpl - Start updating of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30'}
+[DEBUG] 2025-09-08 15:01:28.006 [main] EventDAOImpl - Successfully update of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30'}
+[DEBUG] 2025-09-08 15:01:28.008 [main] EventDAOImpl - Start deleting of the event with id: 10
+[DEBUG] 2025-09-08 15:01:28.016 [main] EventDAOImpl - Finding an event by id: 10
+[WARN ] 2025-09-08 15:01:28.016 [main] EventDAOImpl - Can not to find an event by id: 10
+[DEBUG] 2025-09-08 15:01:28.024 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.024 [main] EventDAOImpl - All events successfully found for day '2022-05-15T21:00:00.000+0000' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.026 [main] EventDAOImpl - Finding an event by id: 3
+[DEBUG] 2025-09-08 15:01:28.029 [main] EventDAOImpl - Event with id 3 successfully found 
+[DEBUG] 2025-09-08 15:01:28.036 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Test title', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:28.039 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 7, 'title' : 'Test title', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:28.049 [main] EventDAOImpl - Start updating of the event: null
+[DEBUG] 2025-09-08 15:01:28.055 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.066 [main] EventDAOImpl - Start updating of the event: {'id' : 10, 'title' : 'Test User', 'date' : '08-09-2025 15:01'}
+[DEBUG] 2025-09-08 15:01:28.080 [main] EventDAOImpl - Start deleting of the event with id: 6
+[DEBUG] 2025-09-08 15:01:28.081 [main] EventDAOImpl - Successfully deletion of the event with id: 6
+[DEBUG] 2025-09-08 15:01:28.086 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.095 [main] EventDAOImpl - Finding all events for day 2000-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.108 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.113 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.114 [main] EventDAOImpl - All events successfully found by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.118 [main] EventDAOImpl - Start inserting of the event: null
+[DEBUG] 2025-09-08 15:01:28.124 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.129 [main] EventDAOImpl - Finding all events by title 'not exists title' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.140 [main] UserDAOImpl - Start inserting of the user: null
+[DEBUG] 2025-09-08 15:01:28.142 [main] UserDAOImpl - Start deleting of the user with id: 2
+[DEBUG] 2025-09-08 15:01:28.143 [main] UserDAOImpl - Successfully deletion of the user with id: 2
+[DEBUG] 2025-09-08 15:01:28.154 [main] UserDAOImpl - Finding all users in the database
+[DEBUG] 2025-09-08 15:01:28.155 [main] UserDAOImpl - All users successfully found
+[DEBUG] 2025-09-08 15:01:28.159 [main] UserDAOImpl - Finding all users by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.160 [main] UserDAOImpl - All users successfully found by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.168 [main] UserDAOImpl - Finding a user by id: 10
+[WARN ] 2025-09-08 15:01:28.168 [main] UserDAOImpl - Can not to find a user by id: 10
+[DEBUG] 2025-09-08 15:01:28.171 [main] UserDAOImpl - Finding a user by email: notexists@gmail.com
+[WARN ] 2025-09-08 15:01:28.172 [main] UserDAOImpl - Can not to find a user by email: notexists@gmail.com
+[DEBUG] 2025-09-08 15:01:28.174 [main] UserDAOImpl - Finding a user by id: 3
+[DEBUG] 2025-09-08 15:01:28.175 [main] UserDAOImpl - The user with id 3 successfully found 
+[DEBUG] 2025-09-08 15:01:28.178 [main] UserDAOImpl - Finding all users by name 'Not exists' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.182 [main] UserDAOImpl - Start updating of the user: null
+[DEBUG] 2025-09-08 15:01:28.185 [main] UserDAOImpl - Finding all users by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.188 [main] UserDAOImpl - Start deleting of the user with id: 10
+[DEBUG] 2025-09-08 15:01:28.190 [main] UserDAOImpl - Finding a user by email: max@gmail.com
+[DEBUG] 2025-09-08 15:01:28.191 [main] UserDAOImpl - The user with email max@gmail.com successfully found 
+[DEBUG] 2025-09-08 15:01:28.194 [main] UserDAOImpl - Start updating of the user: {'id' : 10, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.197 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.200 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:01:28.200 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:01:28.200 [main] UserDAOImpl - Start updating of the user: {'id' : 1, 'name' : 'Test name', 'email' : 'alan@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.201 [main] UserDAOImpl - Successfully update of the user: {'id' : 1, 'name' : 'Test name', 'email' : 'alan@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.203 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.203 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 7, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:01:28.219 [main] TicketDAOImpl - Start deleting of the ticket with id: 10
+[DEBUG] 2025-09-08 15:01:28.221 [main] TicketDAOImpl - Finding all tickets in the database
+[DEBUG] 2025-09-08 15:01:28.222 [main] TicketDAOImpl - All tickets successfully found
+[DEBUG] 2025-09-08 15:01:28.224 [main] TicketDAOImpl - Finding a ticket by id: 10
+[WARN ] 2025-09-08 15:01:28.224 [main] TicketDAOImpl - Can not to find a ticket by id: 10
+[DEBUG] 2025-09-08 15:01:28.225 [main] TicketDAOImpl - Finding a ticket by id: 5
+[DEBUG] 2025-09-08 15:01:28.226 [main] TicketDAOImpl - The ticket with id 5 successfully found 
+[DEBUG] 2025-09-08 15:01:28.227 [main] TicketDAOImpl - Start deleting of the ticket with id: 6
+[DEBUG] 2025-09-08 15:01:28.227 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 6
+[DEBUG] 2025-09-08 15:01:28.228 [main] TicketDAOImpl - Finding all booked tickets by event '[!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@6ed922e1=>java.lang.NullPointerException:date must not be null!!!]' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.229 [main] TicketDAOImpl - All booked tickets successfully found by event [!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@6ed922e1=>java.lang.NullPointerException:date must not be null!!!] in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.230 [main] TicketDAOImpl - Start updating of the ticket: {'id' : 10, 'userId' : 10, 'eventId' : 10, 'place' : 100, 'category' : 'BAR'}
+[DEBUG] 2025-09-08 15:01:28.232 [main] TicketDAOImpl - Start inserting of the ticket: null
+[DEBUG] 2025-09-08 15:01:28.236 [main] TicketDAOImpl - Finding a ticket by id: 5
+[DEBUG] 2025-09-08 15:01:28.237 [main] TicketDAOImpl - The ticket with id 5 successfully found 
+[DEBUG] 2025-09-08 15:01:28.237 [main] TicketDAOImpl - Start updating of the ticket: {'id' : 5, 'userId' : 5, 'eventId' : 1, 'place' : 11, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:28.237 [main] TicketDAOImpl - Successfully update of the ticket: {'id' : 5, 'userId' : 5, 'eventId' : 1, 'place' : 11, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:28.238 [main] TicketDAOImpl - Finding all booked tickets by event '[!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@1455154c=>java.lang.NullPointerException:date must not be null!!!]' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.240 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'null', 'email' : 'null'}' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.242 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 5, 'eventId' : 4, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:28.245 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 100, 'title' : 'null', 'date' : '08-09-2025 15:01'}' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.247 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'null', 'email' : 'null'}' in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.247 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'null', 'email' : 'null'} in the database using pagination
+[DEBUG] 2025-09-08 15:01:28.249 [main] TicketDAOImpl - Start updating of the ticket: null
+[DEBUG] 2025-09-08 15:01:28.250 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 5, 'eventId' : 3, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:28.250 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 7, 'userId' : 5, 'eventId' : 3, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:01:28.251 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 100, 'name' : 'null', 'email' : 'null'}' in the database using pagination
+[DEBUG] 2025-09-08 15:02:36.770 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.771 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.771 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.771 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.772 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.772 [main] BookingFacadeImpl - Created user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:02:36.772 [main] BookingFacadeImpl - Getting user by id: 1
+[DEBUG] 2025-09-08 15:02:36.772 [main] UserServiceImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:02:36.772 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:02:36.772 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.772 [main] UserServiceImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.773 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.773 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.774 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.774 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.774 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.774 [main] BookingFacadeImpl - Created event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.774 [main] BookingFacadeImpl - Getting event by id: 1
+[DEBUG] 2025-09-08 15:02:36.775 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.775 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.775 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.775 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.780 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 1, place: 10, category: STANDARD
+[DEBUG] 2025-09-08 15:02:36.780 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.780 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.781 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.781 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.782 [main] TicketServiceImpl - Start booking a ticket for user with id 1, event with id event 1, place 10, category STANDARD
+[DEBUG] 2025-09-08 15:02:36.783 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.783 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.784 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.784 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.784 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:02:36.784 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.784 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[DEBUG] 2025-09-08 15:02:36.785 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} in the database using pagination
+[DEBUG] 2025-09-08 15:02:36.785 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.785 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:02:36.785 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.785 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}' in the database using pagination
+[DEBUG] 2025-09-08 15:02:36.785 [main] TicketDAOImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'} in the database using pagination
+[DEBUG] 2025-09-08 15:02:36.786 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.786 [main] BookingFacadeImpl - Canceling ticket with id: 1
+[DEBUG] 2025-09-08 15:02:36.786 [main] TicketDAOImpl - Finding a ticket by id: 1
+[DEBUG] 2025-09-08 15:02:36.786 [main] TicketDAOImpl - The ticket with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.786 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.786 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:02:36.786 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.786 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:02:36.787 [main] TicketServiceImpl - Start canceling a ticket with id: 1
+[DEBUG] 2025-09-08 15:02:36.787 [main] TicketDAOImpl - Start deleting of the ticket with id: 1
+[DEBUG] 2025-09-08 15:02:36.787 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 1
+[DEBUG] 2025-09-08 15:02:36.787 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 1
+[DEBUG] 2025-09-08 15:02:36.787 [main] BookingFacadeImpl - Canceled ticket with id 1: true
+[DEBUG] 2025-09-08 15:02:36.787 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:02:36.787 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.788 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:02:36.788 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:02:36.791 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:02:36.791 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:02:36.791 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}' in the database using pagination
+[WARN ] 2025-09-08 15:02:36.791 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:02'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:75) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:02:36.798 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.798 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.799 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.799 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.800 [main] UserServiceImpl - Successfully creation of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.800 [main] BookingFacadeImpl - Created user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:02:36.800 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.800 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.801 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.801 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.801 [main] EventServiceImpl - Successfully creation of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.801 [main] BookingFacadeImpl - Created event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:02'}
+[DEBUG] 2025-09-08 15:02:36.802 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 2, place: 7, category: STANDARD
+[DEBUG] 2025-09-08 15:02:36.802 [main] EventServiceImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:02:36.802 [main] EventDAOImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:02:36.803 [main] EventDAOImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:02:36.803 [main] EventServiceImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:02:36.803 [main] TicketServiceImpl - Start booking a ticket for user with id 2, event with id event 2, place 7, category STANDARD
+[DEBUG] 2025-09-08 15:02:36.804 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.804 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.804 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:02:36.804 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 2, 'eventId' : 2, 'place' : 7, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:05:18.010 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.010 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.010 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.010 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.010 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.011 [main] BookingFacadeImpl - Created user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:05:18.011 [main] BookingFacadeImpl - Getting user by id: 1
+[DEBUG] 2025-09-08 15:05:18.011 [main] UserServiceImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:05:18.011 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:05:18.011 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.011 [main] UserServiceImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.012 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.012 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.012 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.013 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.013 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.013 [main] BookingFacadeImpl - Created event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.013 [main] BookingFacadeImpl - Getting event by id: 1
+[DEBUG] 2025-09-08 15:05:18.013 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.013 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.014 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.014 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.014 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 1, place: 10, category: STANDARD
+[DEBUG] 2025-09-08 15:05:18.014 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.014 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.015 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.015 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.017 [main] TicketServiceImpl - Start booking a ticket for user with id 1, event with id event 1, place 10, category STANDARD
+[DEBUG] 2025-09-08 15:05:18.018 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:05:18.018 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:05:18.018 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:05:18.019 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:05:18.019 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.019 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.019 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.019 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.019 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketDAOImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'} in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] BookingFacadeImpl - Canceling ticket with id: 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketDAOImpl - Finding a ticket by id: 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] TicketDAOImpl - The ticket with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.020 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.020 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.021 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketServiceImpl - Start canceling a ticket with id: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketDAOImpl - Start deleting of the ticket with id: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] BookingFacadeImpl - Canceled ticket with id 1: true
+[DEBUG] 2025-09-08 15:05:18.021 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.021 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:05:18.021 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:05:18.024 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.024 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.024 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}' in the database using pagination
+[WARN ] 2025-09-08 15:05:18.025 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:75) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:05:18.029 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.029 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.029 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] UserServiceImpl - Successfully creation of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] BookingFacadeImpl - Created user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] EventServiceImpl - Successfully creation of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.030 [main] BookingFacadeImpl - Created event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:05:18.031 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 2, place: 7, category: STANDARD
+[DEBUG] 2025-09-08 15:05:18.031 [main] EventServiceImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:05:18.031 [main] EventDAOImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:05:18.031 [main] EventDAOImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:05:18.031 [main] EventServiceImpl - Event with id 2 successfully found 
+[WARN ] 2025-09-08 15:05:18.031 [main] BookingFacadeImpl - Insufficient funds. userId: 2, eventId: 2, price: 500, balance: 100
+[DEBUG] 2025-09-08 15:05:18.031 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.031 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.031 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:05:18.031 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:101) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:05:18.032 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:05:18.032 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:05:18.032 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}' in the database using pagination
+[WARN ] 2025-09-08 15:05:18.032 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:05', 'ticketPrice' : '500'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:102) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:05:18.064 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '20'}
+[DEBUG] 2025-09-08 15:05:18.068 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:05:18.068 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:05:18.069 [main] EventDAOImpl - Start updating of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:05:18.070 [main] EventDAOImpl - Successfully update of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:05:18.073 [main] EventDAOImpl - Start deleting of the event with id: 10
+[DEBUG] 2025-09-08 15:05:18.085 [main] EventDAOImpl - Finding an event by id: 10
+[WARN ] 2025-09-08 15:05:18.085 [main] EventDAOImpl - Can not to find an event by id: 10
+[DEBUG] 2025-09-08 15:05:18.095 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.096 [main] EventDAOImpl - All events successfully found for day '2022-05-15T21:00:00.000+0000' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.104 [main] EventDAOImpl - Finding an event by id: 3
+[DEBUG] 2025-09-08 15:05:18.105 [main] EventDAOImpl - Event with id 3 successfully found 
+[DEBUG] 2025-09-08 15:05:18.111 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Test title', 'date' : '08-09-2025 15:05', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:05:18.112 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 7, 'title' : 'Test title', 'date' : '08-09-2025 15:05', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:05:18.118 [main] EventDAOImpl - Start updating of the event: null
+[DEBUG] 2025-09-08 15:05:18.120 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.124 [main] EventDAOImpl - Start updating of the event: {'id' : 10, 'title' : 'Test User', 'date' : '08-09-2025 15:05', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:05:18.128 [main] EventDAOImpl - Start deleting of the event with id: 6
+[DEBUG] 2025-09-08 15:05:18.128 [main] EventDAOImpl - Successfully deletion of the event with id: 6
+[DEBUG] 2025-09-08 15:05:18.130 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.133 [main] EventDAOImpl - Finding all events for day 2000-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.140 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.143 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.143 [main] EventDAOImpl - All events successfully found by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.146 [main] EventDAOImpl - Start inserting of the event: null
+[DEBUG] 2025-09-08 15:05:18.148 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:05:18.151 [main] EventDAOImpl - Finding all events by title 'not exists title' in the database using pagination
+[DEBUG] 2025-09-08 15:06:27.835 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.835 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.835 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.836 [main] BookingFacadeImpl - Created user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:27.836 [main] BookingFacadeImpl - Getting user by id: 1
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserServiceImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.836 [main] UserServiceImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.837 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.837 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.837 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.838 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.838 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.838 [main] BookingFacadeImpl - Created event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:27.838 [main] BookingFacadeImpl - Getting event by id: 1
+[DEBUG] 2025-09-08 15:06:27.838 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.838 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.839 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 1, place: 10, category: STANDARD
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.839 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.841 [main] TicketServiceImpl - Start booking a ticket for user with id 1, event with id event 1, place 10, category STANDARD
+[DEBUG] 2025-09-08 15:06:27.841 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:27.841 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:27.842 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:27.842 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:27.842 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.842 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.842 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:27.842 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} in the database using pagination
+[DEBUG] 2025-09-08 15:06:27.842 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.842 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketDAOImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} in the database using pagination
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.843 [main] BookingFacadeImpl - Canceling ticket with id: 1
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketDAOImpl - Finding a ticket by id: 1
+[DEBUG] 2025-09-08 15:06:27.843 [main] TicketDAOImpl - The ticket with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.843 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.844 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketServiceImpl - Start canceling a ticket with id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketDAOImpl - Start deleting of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] BookingFacadeImpl - Canceled ticket with id 1: true
+[DEBUG] 2025-09-08 15:06:27.844 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.844 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:27.844 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:27.847 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.847 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.847 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:27.847 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:75) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:27.851 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.851 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.851 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] UserServiceImpl - Successfully creation of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] BookingFacadeImpl - Created user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventServiceImpl - Successfully creation of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] BookingFacadeImpl - Created event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:27.852 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 2, place: 7, category: STANDARD
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventServiceImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:06:27.852 [main] EventDAOImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:06:27.853 [main] EventDAOImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:06:27.853 [main] EventServiceImpl - Event with id 2 successfully found 
+[WARN ] 2025-09-08 15:06:27.853 [main] BookingFacadeImpl - Insufficient funds. userId: 2, eventId: 2, price: 500, balance: 100
+[DEBUG] 2025-09-08 15:06:27.853 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.853 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.853 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:27.853 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:101) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:27.853 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:27.854 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:27.854 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:27.854 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:102) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:46.498 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.499 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.499 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.499 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.499 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.499 [main] BookingFacadeImpl - Created user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.500 [main] BookingFacadeImpl - Getting user by id: 1
+[DEBUG] 2025-09-08 15:06:46.500 [main] UserServiceImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:06:46.500 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:06:46.500 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.500 [main] UserServiceImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.501 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.501 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.501 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.502 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.502 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.502 [main] BookingFacadeImpl - Created event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.502 [main] BookingFacadeImpl - Getting event by id: 1
+[DEBUG] 2025-09-08 15:06:46.503 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.503 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.503 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.503 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.504 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 1, place: 10, category: STANDARD
+[DEBUG] 2025-09-08 15:06:46.504 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.504 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.504 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.504 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.506 [main] TicketServiceImpl - Start booking a ticket for user with id 1, event with id event 1, place 10, category STANDARD
+[DEBUG] 2025-09-08 15:06:46.506 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.507 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.507 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.507 [main] BookingFacadeImpl - Booked ticket: {'id' : 1, 'userId' : 1, 'eventId' : 1, 'place' : 10, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.507 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.507 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.507 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.508 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.508 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.508 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.508 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.509 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.509 [main] TicketDAOImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.509 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.509 [main] BookingFacadeImpl - Canceling ticket with id: 1
+[DEBUG] 2025-09-08 15:06:46.509 [main] TicketDAOImpl - Finding a ticket by id: 1
+[DEBUG] 2025-09-08 15:06:46.510 [main] TicketDAOImpl - The ticket with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.510 [main] EventServiceImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.510 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.510 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.510 [main] EventServiceImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.510 [main] TicketServiceImpl - Start canceling a ticket with id: 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] TicketDAOImpl - Start deleting of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] BookingFacadeImpl - Canceled ticket with id 1: true
+[DEBUG] 2025-09-08 15:06:46.511 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.511 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:46.512 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 1, 'name' : 'Andrii', 'email' : 'andrii@gmail.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:46.514 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.515 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.515 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:46.515 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 1, 'title' : 'Integration Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.createUserThenCreateEventThenBookTicketForThisEventForUserAndThenCancelItShouldBeOk(BookingFacadeImplTest.java:75) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:46.521 [main] BookingFacadeImpl - Creating user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.521 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.521 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.521 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.521 [main] UserServiceImpl - Successfully creation of the user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] BookingFacadeImpl - Created user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] BookingFacadeImpl - Creating event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] EventServiceImpl - Start creating an event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] EventServiceImpl - Successfully creation of the event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.522 [main] BookingFacadeImpl - Created event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}
+[DEBUG] 2025-09-08 15:06:46.523 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 2, place: 7, category: STANDARD
+[DEBUG] 2025-09-08 15:06:46.523 [main] EventServiceImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:06:46.523 [main] EventDAOImpl - Finding an event by id: 2
+[DEBUG] 2025-09-08 15:06:46.523 [main] EventDAOImpl - Event with id 2 successfully found 
+[DEBUG] 2025-09-08 15:06:46.523 [main] EventServiceImpl - Event with id 2 successfully found 
+[WARN ] 2025-09-08 15:06:46.523 [main] BookingFacadeImpl - Insufficient funds. userId: 2, eventId: 2, price: 500, balance: 100
+[DEBUG] 2025-09-08 15:06:46.523 [main] BookingFacadeImpl - Getting booked tickets by user: {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.523 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.524 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:46.524 [main] TicketServiceImpl - Can not to find a list of booked tickets by user '{'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by user {'id' : 2, 'name' : 'LowFundsUser', 'email' : 'lowfunds@example.com'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByUser(TicketDAOImpl.java:114) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:53) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:151) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:101) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:46.528 [main] BookingFacadeImpl - Getting booked tickets by event: {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}, pageSize: 1, pageNum: 1
+[DEBUG] 2025-09-08 15:06:46.528 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'} with page size 1 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.528 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}' in the database using pagination
+[WARN ] 2025-09-08 15:06:46.528 [main] TicketServiceImpl - Can not to find a list of booked tickets by event '{'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'}'
+ua.epam.mishchenko.ticketbooking.exception.DbException: List of all booked tickets by event {'id' : 2, 'title' : 'Expensive Event', 'date' : '08-09-2025 15:06', 'ticketPrice' : '500'} is empty
+	at ua.epam.mishchenko.ticketbooking.dao.impl.TicketDAOImpl.getAllByEvent(TicketDAOImpl.java:177) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.service.impl.TicketServiceImpl.getBookedTickets(TicketServiceImpl.java:73) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImpl.getBookedTickets(BookingFacadeImpl.java:157) ~[classes/:?]
+	at ua.epam.mishchenko.ticketbooking.facade.impl.BookingFacadeImplTest.bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated(BookingFacadeImplTest.java:102) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.2.10.jar:6.2.10]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159) ~[surefire-junit4-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.1.jar:2.22.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.1.jar:2.22.1]
+[DEBUG] 2025-09-08 15:06:46.575 [main] BookingFacadeImpl - Booking ticket for userId: 1, eventId: 10, place: 5, category: PREMIUM
+[DEBUG] 2025-09-08 15:06:46.576 [main] BookingFacadeImpl - Booked ticket: {'id' : null, 'userId' : 1, 'eventId' : 10, 'place' : 5, 'category' : 'PREMIUM'}
+[DEBUG] 2025-09-08 15:06:46.577 [main] BookingFacadeImpl - Booking ticket for userId: 2, eventId: 20, place: 15, category: STANDARD
+[WARN ] 2025-09-08 15:06:46.577 [main] BookingFacadeImpl - Insufficient funds. userId: 2, eventId: 20, price: 200, balance: 50
+[DEBUG] 2025-09-08 15:06:46.597 [main] UserServiceImpl - Finding a user by id: 10
+[WARN ] 2025-09-08 15:06:46.598 [main] UserServiceImpl - Can not to get an user by id: 10
+[DEBUG] 2025-09-08 15:06:46.599 [main] UserServiceImpl - Finding a user by email: max@gmail.com
+[DEBUG] 2025-09-08 15:06:46.600 [main] UserServiceImpl - The user with email max@gmail.com successfully found 
+[DEBUG] 2025-09-08 15:06:46.600 [main] UserServiceImpl - Start creating an user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+[WARN ] 2025-09-08 15:06:46.601 [main] UserServiceImpl - Can not to create an user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.602 [main] UserServiceImpl - Start creating an user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.602 [main] UserServiceImpl - Successfully creation of the user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.603 [main] UserServiceImpl - Start updating an user: null
+[WARN ] 2025-09-08 15:06:46.604 [main] UserServiceImpl - Can not to update an user: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.604 [main] UserServiceImpl - Finding a user by email: notexists@gmail.com
+[WARN ] 2025-09-08 15:06:46.604 [main] UserServiceImpl - Can not to get an user by email: notexists@gmail.com
+[DEBUG] 2025-09-08 15:06:46.605 [main] UserServiceImpl - Finding all users by name Not exists with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:06:46.605 [main] UserServiceImpl - Can not to find a list of users by name 'Not exists'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.606 [main] UserServiceImpl - Start deleting an user with id: 2
+[DEBUG] 2025-09-08 15:06:46.606 [main] UserServiceImpl - Successfully deletion of the user with id: 2
+[DEBUG] 2025-09-08 15:06:46.607 [main] UserServiceImpl - Finding all users by name Max with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.608 [main] UserServiceImpl - All users successfully found by name Max with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.609 [main] UserServiceImpl - Finding a user by id: 3
+[DEBUG] 2025-09-08 15:06:46.609 [main] UserServiceImpl - The user with id 3 successfully found 
+[DEBUG] 2025-09-08 15:06:46.609 [main] UserServiceImpl - Start updating an user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.610 [main] UserServiceImpl - Successfully updating of the user: {'id' : 1, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.610 [main] UserServiceImpl - Start deleting an user with id: 10
+[WARN ] 2025-09-08 15:06:46.611 [main] UserServiceImpl - Can not to delete an user with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.629 [main] EventServiceImpl - Start updating an event: null
+[WARN ] 2025-09-08 15:06:46.630 [main] EventServiceImpl - Can not to update an event: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.630 [main] EventServiceImpl - Finding an event by id: 10
+[WARN ] 2025-09-08 15:06:46.630 [main] EventServiceImpl - Can not to find an event by id: 10
+[DEBUG] 2025-09-08 15:06:46.631 [main] EventServiceImpl - Finding an event by id: 3
+[DEBUG] 2025-09-08 15:06:46.631 [main] EventServiceImpl - Event with id 3 successfully found 
+[DEBUG] 2025-09-08 15:06:46.632 [main] EventServiceImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.632 [main] EventServiceImpl - All events successfully found for day 2022-05-15T21:00:00.000+0000 with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.633 [main] EventServiceImpl - Start creating an event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.633 [main] EventServiceImpl - Successfully creation of the event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.637 [main] EventServiceImpl - Start updating an event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.637 [main] EventServiceImpl - Successfully updating of the event: {'id' : 1, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.638 [main] EventServiceImpl - Finding all events by title not exists title with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:06:46.638 [main] EventServiceImpl - Can not to find a list of events by title 'not exists title'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.640 [main] EventServiceImpl - Start deleting an event with id: 6
+[DEBUG] 2025-09-08 15:06:46.640 [main] EventServiceImpl - Successfully deletion of the event with id: 6
+[DEBUG] 2025-09-08 15:06:46.641 [main] EventServiceImpl - Finding all events for day 2000-05-15T21:00:00.000+0000 with page size 1 and number of page 1
+[WARN ] 2025-09-08 15:06:46.642 [main] EventServiceImpl - Can not to find a list of events for day 2000-05-15T21:00:00.000+0000
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.642 [main] EventServiceImpl - Start creating an event: null
+[WARN ] 2025-09-08 15:06:46.642 [main] EventServiceImpl - Can not to create an event: null
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.643 [main] EventServiceImpl - Start deleting an event with id: 10
+[WARN ] 2025-09-08 15:06:46.643 [main] EventServiceImpl - Can not to delete an event with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.644 [main] EventServiceImpl - Finding all events by title Third event with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.644 [main] EventServiceImpl - All events successfully found by title Third event with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.660 [main] TicketServiceImpl - Start canceling a ticket with id: 6
+[DEBUG] 2025-09-08 15:06:46.660 [main] TicketServiceImpl - Successfully canceling of the ticket with id: 6
+[DEBUG] 2025-09-08 15:06:46.660 [main] TicketServiceImpl - Start booking a ticket for user with id 4, event with id event 1, place 10, category BAR
+[WARN ] 2025-09-08 15:06:46.661 [main] TicketServiceImpl - Can not to book a ticket for user with id 4, event with id 1, place 10, category BAR
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.661 [main] TicketServiceImpl - Finding all booked tickets by user {'id' : 1, 'name' : 'Alan', 'email' : 'alan@gmail.com'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.661 [main] TicketServiceImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'Alan', 'email' : 'alan@gmail.com'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.662 [main] TicketServiceImpl - Finding all booked tickets by event {'id' : 4, 'title' : 'Fourth event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '40'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.662 [main] TicketServiceImpl - All booked tickets successfully found by event {'id' : 4, 'title' : 'Fourth event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '40'} with page size 2 and number of page 1
+[DEBUG] 2025-09-08 15:06:46.663 [main] TicketServiceImpl - Finding all booked tickets by event null with page size 2 and number of page 1
+[WARN ] 2025-09-08 15:06:46.663 [main] TicketServiceImpl - Can not to find a list of booked tickets by event 'null'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.664 [main] TicketServiceImpl - Start booking a ticket for user with id 10, event with id event 10, place 20, category PREMIUM
+[DEBUG] 2025-09-08 15:06:46.664 [main] TicketServiceImpl - Successfully booking of the ticket: {'id' : 1, 'userId' : 10, 'eventId' : 10, 'place' : 20, 'category' : 'PREMIUM'}
+[DEBUG] 2025-09-08 15:06:46.664 [main] TicketServiceImpl - Start canceling a ticket with id: 10
+[WARN ] 2025-09-08 15:06:46.664 [main] TicketServiceImpl - Can not to cancel a ticket with id: 10
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.665 [main] TicketServiceImpl - Finding all booked tickets by user null with page size 2 and number of page 1
+[WARN ] 2025-09-08 15:06:46.665 [main] TicketServiceImpl - Can not to find a list of booked tickets by user 'null'
+ua.epam.mishchenko.ticketbooking.exception.DbException: null
+[DEBUG] 2025-09-08 15:06:46.686 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Second event', 'date' : '15-05-2022 21:00', 'ticketPrice' : '20'}
+[DEBUG] 2025-09-08 15:06:46.690 [main] EventDAOImpl - Finding an event by id: 1
+[DEBUG] 2025-09-08 15:06:46.691 [main] EventDAOImpl - Event with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.691 [main] EventDAOImpl - Start updating of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.691 [main] EventDAOImpl - Successfully update of the event: {'id' : 1, 'title' : 'Test title', 'date' : '18-05-2022 15:30', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.693 [main] EventDAOImpl - Start deleting of the event with id: 10
+[DEBUG] 2025-09-08 15:06:46.701 [main] EventDAOImpl - Finding an event by id: 10
+[WARN ] 2025-09-08 15:06:46.701 [main] EventDAOImpl - Can not to find an event by id: 10
+[DEBUG] 2025-09-08 15:06:46.704 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.705 [main] EventDAOImpl - All events successfully found for day '2022-05-15T21:00:00.000+0000' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.708 [main] EventDAOImpl - Finding an event by id: 3
+[DEBUG] 2025-09-08 15:06:46.709 [main] EventDAOImpl - Event with id 3 successfully found 
+[DEBUG] 2025-09-08 15:06:46.710 [main] EventDAOImpl - Start inserting of the event: {'id' : 0, 'title' : 'Test title', 'date' : '08-09-2025 15:06', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.711 [main] EventDAOImpl - Successfully insertion of the event: {'id' : 7, 'title' : 'Test title', 'date' : '08-09-2025 15:06', 'ticketPrice' : '10'}
+[DEBUG] 2025-09-08 15:06:46.713 [main] EventDAOImpl - Start updating of the event: null
+[DEBUG] 2025-09-08 15:06:46.715 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.717 [main] EventDAOImpl - Start updating of the event: {'id' : 10, 'title' : 'Test User', 'date' : '08-09-2025 15:06', 'ticketPrice' : '100'}
+[DEBUG] 2025-09-08 15:06:46.720 [main] EventDAOImpl - Start deleting of the event with id: 6
+[DEBUG] 2025-09-08 15:06:46.720 [main] EventDAOImpl - Successfully deletion of the event with id: 6
+[DEBUG] 2025-09-08 15:06:46.722 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.725 [main] EventDAOImpl - Finding all events for day 2000-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.731 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.733 [main] EventDAOImpl - Finding all events by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.734 [main] EventDAOImpl - All events successfully found by title 'Third event' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.736 [main] EventDAOImpl - Start inserting of the event: null
+[DEBUG] 2025-09-08 15:06:46.738 [main] EventDAOImpl - Finding all events for day 2022-05-15T21:00:00.000+0000 in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.740 [main] EventDAOImpl - Finding all events by title 'not exists title' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.746 [main] UserDAOImpl - Start inserting of the user: null
+[DEBUG] 2025-09-08 15:06:46.749 [main] UserDAOImpl - Start deleting of the user with id: 2
+[DEBUG] 2025-09-08 15:06:46.749 [main] UserDAOImpl - Successfully deletion of the user with id: 2
+[DEBUG] 2025-09-08 15:06:46.752 [main] UserDAOImpl - Finding all users in the database
+[DEBUG] 2025-09-08 15:06:46.753 [main] UserDAOImpl - All users successfully found
+[DEBUG] 2025-09-08 15:06:46.755 [main] UserDAOImpl - Finding all users by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.755 [main] UserDAOImpl - All users successfully found by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.757 [main] UserDAOImpl - Finding a user by id: 10
+[WARN ] 2025-09-08 15:06:46.757 [main] UserDAOImpl - Can not to find a user by id: 10
+[DEBUG] 2025-09-08 15:06:46.760 [main] UserDAOImpl - Finding a user by email: notexists@gmail.com
+[WARN ] 2025-09-08 15:06:46.760 [main] UserDAOImpl - Can not to find a user by email: notexists@gmail.com
+[DEBUG] 2025-09-08 15:06:46.762 [main] UserDAOImpl - Finding a user by id: 3
+[DEBUG] 2025-09-08 15:06:46.762 [main] UserDAOImpl - The user with id 3 successfully found 
+[DEBUG] 2025-09-08 15:06:46.764 [main] UserDAOImpl - Finding all users by name 'Not exists' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.767 [main] UserDAOImpl - Start updating of the user: null
+[DEBUG] 2025-09-08 15:06:46.771 [main] UserDAOImpl - Finding all users by name 'Alex' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.773 [main] UserDAOImpl - Start deleting of the user with id: 10
+[DEBUG] 2025-09-08 15:06:46.775 [main] UserDAOImpl - Finding a user by email: max@gmail.com
+[DEBUG] 2025-09-08 15:06:46.775 [main] UserDAOImpl - The user with email max@gmail.com successfully found 
+[DEBUG] 2025-09-08 15:06:46.777 [main] UserDAOImpl - Start updating of the user: {'id' : 10, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.779 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Max', 'email' : 'max@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.781 [main] UserDAOImpl - Finding a user by id: 1
+[DEBUG] 2025-09-08 15:06:46.781 [main] UserDAOImpl - The user with id 1 successfully found 
+[DEBUG] 2025-09-08 15:06:46.781 [main] UserDAOImpl - Start updating of the user: {'id' : 1, 'name' : 'Test name', 'email' : 'alan@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.781 [main] UserDAOImpl - Successfully update of the user: {'id' : 1, 'name' : 'Test name', 'email' : 'alan@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.782 [main] UserDAOImpl - Start inserting of the user: {'id' : 0, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.782 [main] UserDAOImpl - Successfully insertion of the user: {'id' : 7, 'name' : 'Test User', 'email' : 'testuser@gmail.com'}
+[DEBUG] 2025-09-08 15:06:46.790 [main] TicketDAOImpl - Start deleting of the ticket with id: 10
+[DEBUG] 2025-09-08 15:06:46.798 [main] TicketDAOImpl - Finding all tickets in the database
+[DEBUG] 2025-09-08 15:06:46.798 [main] TicketDAOImpl - All tickets successfully found
+[DEBUG] 2025-09-08 15:06:46.803 [main] TicketDAOImpl - Finding a ticket by id: 10
+[WARN ] 2025-09-08 15:06:46.803 [main] TicketDAOImpl - Can not to find a ticket by id: 10
+[DEBUG] 2025-09-08 15:06:46.805 [main] TicketDAOImpl - Finding a ticket by id: 5
+[DEBUG] 2025-09-08 15:06:46.805 [main] TicketDAOImpl - The ticket with id 5 successfully found 
+[DEBUG] 2025-09-08 15:06:46.807 [main] TicketDAOImpl - Start deleting of the ticket with id: 6
+[DEBUG] 2025-09-08 15:06:46.807 [main] TicketDAOImpl - Successfully deletion of the ticket with id: 6
+[DEBUG] 2025-09-08 15:06:46.808 [main] TicketDAOImpl - Finding all booked tickets by event '[!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@36327cec=>java.lang.NullPointerException:date must not be null!!!]' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.808 [main] TicketDAOImpl - All booked tickets successfully found by event [!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@36327cec=>java.lang.NullPointerException:date must not be null!!!] in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.810 [main] TicketDAOImpl - Start updating of the ticket: {'id' : 10, 'userId' : 10, 'eventId' : 10, 'place' : 100, 'category' : 'BAR'}
+[DEBUG] 2025-09-08 15:06:46.812 [main] TicketDAOImpl - Start inserting of the ticket: null
+[DEBUG] 2025-09-08 15:06:46.813 [main] TicketDAOImpl - Finding a ticket by id: 5
+[DEBUG] 2025-09-08 15:06:46.814 [main] TicketDAOImpl - The ticket with id 5 successfully found 
+[DEBUG] 2025-09-08 15:06:46.814 [main] TicketDAOImpl - Start updating of the ticket: {'id' : 5, 'userId' : 5, 'eventId' : 1, 'place' : 11, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.814 [main] TicketDAOImpl - Successfully update of the ticket: {'id' : 5, 'userId' : 5, 'eventId' : 1, 'place' : 11, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.815 [main] TicketDAOImpl - Finding all booked tickets by event '[!!!ua.epam.mishchenko.ticketbooking.model.impl.EventImpl@194d329e=>java.lang.NullPointerException:date must not be null!!!]' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.817 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'null', 'email' : 'null'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.818 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 5, 'eventId' : 4, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.823 [main] TicketDAOImpl - Finding all booked tickets by event '{'id' : 100, 'title' : 'null', 'date' : '08-09-2025 15:06', 'ticketPrice' : '0'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.824 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 1, 'name' : 'null', 'email' : 'null'}' in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.825 [main] TicketDAOImpl - All booked tickets successfully found by user {'id' : 1, 'name' : 'null', 'email' : 'null'} in the database using pagination
+[DEBUG] 2025-09-08 15:06:46.826 [main] TicketDAOImpl - Start updating of the ticket: null
+[DEBUG] 2025-09-08 15:06:46.827 [main] TicketDAOImpl - Start inserting of the ticket: {'id' : null, 'userId' : 5, 'eventId' : 3, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.828 [main] TicketDAOImpl - Successfully insertion of the ticket: {'id' : 7, 'userId' : 5, 'eventId' : 3, 'place' : 20, 'category' : 'STANDARD'}
+[DEBUG] 2025-09-08 15:06:46.829 [main] TicketDAOImpl - Finding all booked tickets by user '{'id' : 100, 'name' : 'null', 'email' : 'null'}' in the database using pagination

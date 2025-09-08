@@ -91,6 +91,8 @@ public class EventImpl implements Event {
                 "'id' : " + id +
                 ", 'title' : '" + title + '\'' +
                 ", 'date' : '" + DATE_FORMATTER.format(date) +
-                "'}";
+                "'" +
+                ", 'ticketPrice' : '" + ticketPrice + "'" +
+                "}";
     }
 }

@@ -78,4 +78,31 @@ public class BookingFacadeImplTest {
         assertNull(bookedTicketsByEventAfterCanceling);
     }
 
+    @Test
+    public void bookTicketWithInsufficientFundsShouldReturnNullAndNoBookingCreated() {
+        User user = new UserImpl("LowFundsUser", "lowfunds@example.com");
+        Event event = new EventImpl("Expensive Event", new Date(System.currentTimeMillis()), 500);
+        int place = 7;
+
+        user = bookingFacade.createUser(user);
+        event = bookingFacade.createEvent(event);
+
+        // Configure mocked account to have insufficient funds
+        org.mockito.Mockito.reset(userAccountService);
+        UserAccount mockAccount = new UserAccountImpl();
+        mockAccount.setUserAmount(100);
+        when(userAccountService.getUserAccountByUserId(anyLong()))
+                .thenReturn(mockAccount);
+
+        Ticket ticket = bookingFacade.bookTicket(user.getId(), event.getId(), place, Ticket.Category.STANDARD);
+
+        assertNull(ticket);
+
+        List<Ticket> bookedTicketsByUser = bookingFacade.getBookedTickets(user, 1, 1);
+        List<Ticket> bookedTicketsByEvent = bookingFacade.getBookedTickets(event, 1, 1);
+
+        assertNull(bookedTicketsByUser);
+        assertNull(bookedTicketsByEvent);
+    }
+
 }

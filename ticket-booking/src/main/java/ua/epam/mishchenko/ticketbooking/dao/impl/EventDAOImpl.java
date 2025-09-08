@@ -60,8 +60,28 @@ public class EventDAOImpl implements EventDAO {
         Event event = new EventImpl();
         event.setId(Long.parseLong(getFieldValueFromFields(stringFields, index++)));
         event.setTitle(getFieldValueFromFields(stringFields, index++));
-        event.setDate(createDateFromString(getFieldValueFromFields(stringFields, index)));
+        event.setDate(createDateFromString(getFieldValueFromFields(stringFields, index++)));
+        String ticketPriceString = tryGetFieldValue(stringFields, index);
+        if (ticketPriceString != null && !ticketPriceString.isEmpty()) {
+            try {
+                event.setTicketPrice(Integer.parseInt(ticketPriceString.trim()));
+            } catch (NumberFormatException ignored) {
+                // Keep default if old data format without ticketPrice
+            }
+        }
         return event;
+    }
+
+    private String tryGetFieldValue(String[] stringFields, int index) {
+        if (index < 0 || index >= stringFields.length) {
+            return null;
+        }
+        final String delimiterBetweenKeyAndValue = " : ";
+        String[] parts = stringFields[index].split(delimiterBetweenKeyAndValue);
+        if (parts.length < 2) {
+            return null;
+        }
+        return removeSingleQuotesIfExist(parts[1]);
     }
 
     private Date createDateFromString(String fieldValueFromFields) {
